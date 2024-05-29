@@ -39,7 +39,7 @@ def main():
     print("\nMenu:")
     print("1. Start Flashcards")
     print("2. Add a Flashcard")
-    print("3. Save and Exit")
+    print("3. Exit")
     
     choice = input("Choose an option: ")
     
@@ -50,9 +50,9 @@ def main():
       answer = input("Enter the answer: ")
       flashcards.append({"question": question, "answer": answer})
       print("Flashcard added!")
+      save_flashcards('flashcards.json', flashcards)  # Save flashcards after adding a new one
     elif choice == "3":
-      save_flashcards('flashcards.json', flashcards)
-      print("Flashcards saved!  Exiting...")
+      print("Exiting...Have a nice day!")
       break
     else:
       print("Please select a valid option!")
