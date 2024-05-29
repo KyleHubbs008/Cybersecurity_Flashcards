@@ -29,6 +29,10 @@ Here are some example questions included in the flashcards:
 - **Question**: Define phishing.
   - **Answer**: Phishing is a type of social engineering attack where attackers deceive individuals into providing sensitive information.
 
+## Future Plans
+
+This is the first version of the Cybersecurity Flashcard App. Once I learn some frameworks, I plan to make it into a legit web app. Stay tuned for updates!
+
 ## Contributing
 
 Contributions are welcome! To contribute:
