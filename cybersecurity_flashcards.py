@@ -21,13 +21,14 @@ flashcards = load_flashcards('flashcards.json')
 def show_flashcards(flashcards):
   random.shuffle(flashcards)  # Shuffle flashcards to randomize order
   for card in flashcards:
+    print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     print("\nQuestion: " + card["question"])
     response = input("Press Enter to show the answer or type exit to quit: ").strip().lower()
     if response == 'exit':
       print("Exiting flashcards...")
       break
-    print("Answer: " + card["answer"])
-    response = input("Press Enter to move on to the next flashcard or type exit to quit: ").strip().lower()
+    print("\nAnswer: " + card["answer"])
+    response = input("Press Enter to move on to the next flashcard or type exit to quit: \n").strip().lower()
     if response == 'exit':
       print("Exiting flashcards...")
       break
