@@ -19,12 +19,18 @@ def save_flashcards(filename, flashcards):
 flashcards = load_flashcards('flashcards.json')
 
 def show_flashcards(flashcards):
-  random.shuffle(flashcards)
+  random.shuffle(flashcards)  # Shuffle flashcards to randomize order
   for card in flashcards:
     print("\nQuestion: " + card["question"])
-    input("Press ENTER to show the answer...")
+    response = input("Press Enter to show the answer or type exit to quit: ").strip().lower()
+    if response == 'exit':
+      print("Exiting flashcards...")
+      break
     print("Answer: " + card["answer"])
-    input("Press ENTER to move on to the next flashcard...")
+    response = input("Press Enter to move on to the next flashcard or type exit to quit: ").strip().lower()
+    if response == 'exit':
+      print("Exiting flashcards...")
+      break
     
 
 def main():
